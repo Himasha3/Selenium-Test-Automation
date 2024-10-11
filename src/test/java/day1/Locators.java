@@ -33,9 +33,18 @@ public class Locators {
 		//driver.findElement(By.partialLinkText("Table")).click();
 		
 		//classname
-		List<WebElement> headerLinks=driver.findElements(By.className("list-inline-item"));
+		//List<WebElement> headerLinks=driver.findElements(By.className("list-inline-item"));
 		
-		System.out.println("total number of header links "+headerLinks.size());
+		//System.out.println("total number of header links "+headerLinks.size());
+		
+		//tagName
+		List<WebElement> links = driver.findElements(By.tagName("a"));
+		
+		System.out.println("Total number of links :"+links.size());
+		
+		List<WebElement> images = driver.findElements(By.tagName("img"));
+		
+		System.out.println("Total number of images:"+images.size());
 		
 		
 
