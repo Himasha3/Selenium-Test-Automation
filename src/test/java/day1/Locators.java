@@ -23,7 +23,10 @@ public class Locators {
 		//System.out.println(logoDisplaystatus);
 		
 		//linkText
-		driver.findElement(By.linkText("Tablets")).click();
+		//driver.findElement(By.linkText("Tablets")).click();
+		
+		//partialLinkText
+		driver.findElement(By.partialLinkText("Table")).click();
 		
 
 	}
