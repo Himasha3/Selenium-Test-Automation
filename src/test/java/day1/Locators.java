@@ -18,9 +18,12 @@ public class Locators {
 		//driver.findElement(By.name("search")).sendKeys("Mac");
 		
 		//id
-		boolean logoDisplaystatus =driver.findElement(By.id("logo")).isDisplayed();
+		//boolean logoDisplaystatus =driver.findElement(By.id("logo")).isDisplayed();
 		
-		System.out.println(logoDisplaystatus);
+		//System.out.println(logoDisplaystatus);
+		
+		//linkText
+		driver.findElement(By.linkText("Tablets")).click();
 		
 
 	}
