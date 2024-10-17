@@ -23,7 +23,11 @@ public class CSSLocators {
 		
 		//with tag classname(tag.classname)
 		
-	     driver.findElement(By.cssSelector("input.form-control")).sendKeys("T-shirts");
+	    // driver.findElement(By.cssSelector("input.form-control")).sendKeys("T-shirts");
+	     
+	     // without tag - (.classname)
+	     
+	     driver.findElement(By.cssSelector(".form-control")).sendKeys("T-shirts");
 	}
 	
 
