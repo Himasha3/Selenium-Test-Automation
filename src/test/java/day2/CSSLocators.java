@@ -35,7 +35,12 @@ public class CSSLocators {
 		
 		//without tag - attribute
 		
-		driver.findElement(By.cssSelector("[placeholder= 'Search']")).sendKeys("T-shirts");
+		//driver.findElement(By.cssSelector("[placeholder= 'Search']")).sendKeys("T-shirts");
+		 
+		//tag.classname[attribute =' value']
+		
+		driver.findElement(By.cssSelector("input.form-control[name='search']")).sendKeys("T-shirts");
+		
 	}
 	
 
