@@ -9,7 +9,7 @@ public class CSSLocators {
 
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://www.globalsqa.com/demo-site/");
+		driver.get("https://demo.opencart.com/");
 		
 		driver.manage().window().maximize();
 		
@@ -19,7 +19,12 @@ public class CSSLocators {
 		
 		//without tag
 		
-		driver.findElement(By.cssSelector("#s")).sendKeys("T-shirts");
+		//driver.findElement(By.cssSelector("#s")).sendKeys("T-shirts");
+		
+		//with tag classname(tag.classname)
+		
+	     driver.findElement(By.cssSelector("input.form-control")).sendKeys("T-shirts");
 	}
+	
 
 }
