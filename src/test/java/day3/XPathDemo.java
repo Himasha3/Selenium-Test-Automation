@@ -39,7 +39,13 @@ public class XPathDemo {
 		
 		//System.out.println(value);
 		
-		driver.findElement(By.xpath("//input[contains (@placeholder,'Sea' ) ]")).sendKeys("Tshirts");
+		// Xpath with contains ()
+		
+		//driver.findElement(By.xpath("//input[contains (@placeholder,'Sea' ) ]")).sendKeys("Tshirts");
+		
+		// Xpath with start-with () 
+		
+		driver.findElement(By.xpath("//input[starts-with (@placeholder,'Sea' ) ]")).sendKeys("Tshirts");
 
 	}
 
