@@ -19,7 +19,11 @@ public class XPathDemo {
 		
 		//Xpath with multiple attributes
 		
-		driver.findElement(By.xpath("//input[@name='search'][@placeholder='Search']")).sendKeys("Tshirts");
+		//driver.findElement(By.xpath("//input[@name='search'][@placeholder='Search']")).sendKeys("Tshirts");
+		
+		//Xpath with and or operators
+		
+		driver.findElement(By.xpath("//input[@name='search' and @placeholder='Search']")).sendKeys("Tshirts");
 		
 		
 
