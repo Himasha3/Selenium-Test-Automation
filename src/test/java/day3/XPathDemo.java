@@ -25,9 +25,15 @@ public class XPathDemo {
 		
 		//driver.findElement(By.xpath("//input[@name='search' and @placeholder='Search']")).sendKeys("Tshirts");
 		
-		driver.findElement(By.xpath("//input[@name='search' or @placeholder='Search']")).sendKeys("Tshirts");
+		//driver.findElement(By.xpath("//input[@name='search' or @placeholder='Search']")).sendKeys("Tshirts");
 		
+		//Xpath with inner text - text()
 		
+		driver.findElement(By.xpath("//*[text() = 'MacBook']")).click();
+		
+		boolean displaystatus = driver.findElement(By.xpath("//h3[text() = 'Featured']")).isDisplayed();
+		
+		System.out.println(displaystatus);
 
 	}
 
