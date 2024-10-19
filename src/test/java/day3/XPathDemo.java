@@ -45,7 +45,13 @@ public class XPathDemo {
 		
 		// Xpath with start-with () 
 		
-		driver.findElement(By.xpath("//input[starts-with (@placeholder,'Sea' ) ]")).sendKeys("Tshirts");
+		//driver.findElement(By.xpath("//input[starts-with (@placeholder,'Sea' ) ]")).sendKeys("Tshirts");
+		
+		//chained xpath
+		
+		boolean status = driver.findElement(By.xpath("//div[@id='logo']/a/img")).isDisplayed();
+		
+		System.out.println(status);
 
 	}
 
