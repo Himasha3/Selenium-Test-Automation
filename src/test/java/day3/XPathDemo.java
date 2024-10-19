@@ -31,13 +31,15 @@ public class XPathDemo {
 		
 		//driver.findElement(By.xpath("//*[text() = 'MacBook']")).click();
 		
-        boolean displaystatus = driver.findElement(By.xpath("//h3[text() = 'Featured']")).isDisplayed();
+        //boolean displaystatus = driver.findElement(By.xpath("//h3[text() = 'Featured']")).isDisplayed();
 		
-		System.out.println(displaystatus);
+		//System.out.println(displaystatus);
 		
-		String value = driver.findElement(By.xpath("//h3[text() = 'Featured']")).getText();
+		//String value = driver.findElement(By.xpath("//h3[text() = 'Featured']")).getText();
 		
-		System.out.println(value);
+		//System.out.println(value);
+		
+		driver.findElement(By.xpath("//input[contains (@placeholder,'Sea' ) ]")).sendKeys("Tshirts");
 
 	}
 
