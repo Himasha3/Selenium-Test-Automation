@@ -23,7 +23,9 @@ public class XPathDemo {
 		
 		//Xpath with and or operators
 		
-		driver.findElement(By.xpath("//input[@name='search' and @placeholder='Search']")).sendKeys("Tshirts");
+		//driver.findElement(By.xpath("//input[@name='search' and @placeholder='Search']")).sendKeys("Tshirts");
+		
+		driver.findElement(By.xpath("//input[@name='search' or @placeholder='Search']")).sendKeys("Tshirts");
 		
 		
 
