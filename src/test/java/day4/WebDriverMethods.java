@@ -37,9 +37,13 @@ public class WebDriverMethods {
 		//getWindowHandles
 		driver.findElement(By.linkText("OrangeHRM, Inc")).click();
 		
-		Set<String> windowids = driver.getWindowHandles();
+		//Set<String> windowids = driver.getWindowHandles();
 		
-		System.out.println(windowids);
+		//System.out.println(windowids);
+		
+		//driver.close
+		
+		driver.close();
 		
 		
 	}
