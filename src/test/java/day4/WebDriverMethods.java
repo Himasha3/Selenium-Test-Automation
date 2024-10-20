@@ -11,6 +11,10 @@ public class WebDriverMethods {
 		
         //get url
 		driver.get("https://opensource-demo.orangehrmlive.com/");
+		
+		//getTitle
+		
+		System.out.println(driver.getTitle());
 	}
 
 }
