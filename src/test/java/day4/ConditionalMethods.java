@@ -16,9 +16,15 @@ public class ConditionalMethods {
 		
 		//isDispalyed
 		
-		WebElement logo = driver.findElement(By.xpath("//img[@alt='nopCommerce demo store']"));
+		//WebElement logo = driver.findElement(By.xpath("//img[@alt='nopCommerce demo store']"));
 		
-		System.out.println("Display status of logo :"+logo.isDisplayed());
+		//System.out.println("Display status of logo :"+logo.isDisplayed());
+		
+		//isEnabled
+		
+		boolean status = driver.findElement(By.xpath("//input[@id='FirstName']")).isEnabled();
+		
+		System.out.println("status:"+status);
 
 	}
 
