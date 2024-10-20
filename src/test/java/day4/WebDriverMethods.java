@@ -43,8 +43,11 @@ public class WebDriverMethods {
 		
 		//driver.close
 		
-		driver.close();
+		//driver.close();
 		
+		//driver.quit
+		
+		driver.quit();
 		
 	}
 
