@@ -22,10 +22,41 @@ public class ConditionalMethods {
 		
 		//isEnabled
 		
-		boolean status = driver.findElement(By.xpath("//input[@id='FirstName']")).isEnabled();
+		//boolean status = driver.findElement(By.xpath("//input[@id='FirstName']")).isEnabled();
 		
-		System.out.println("status:"+status);
+		//System.out.println("status:"+status);
 
+		//isSelected
+		
+		WebElement male_rd = driver.findElement(By.xpath("//input[@id='gender-male']"));
+		
+		WebElement female_rd = driver.findElement(By.xpath("//input[@id='gender-female']"));
+		
+		System.out.println("Before selection.......");
+		
+		System.out.println(male_rd.isSelected());
+		
+		System.out.println(female_rd.isSelected());
+		
+		//System.out.println("After selecting male.....");
+		//male_rd.click();
+		
+		//System.out.println(male_rd.isSelected());
+		
+		//System.out.println(female_rd.isSelected());
+		
+		System.out.println("After selecting female...");
+		
+		female_rd.click();
+		
+		System.out.println(male_rd.isSelected());
+		 
+		System.out.println(female_rd.isSelected());
+		
+		
+		
+		
+		
 	}
 
 }
