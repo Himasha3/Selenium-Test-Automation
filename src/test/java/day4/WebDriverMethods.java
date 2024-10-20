@@ -25,6 +25,10 @@ public class WebDriverMethods {
 		//getPageSource
 		System.out.println(driver.getPageSource());
 		
+		//getWindowHnadle
+		String windowid = driver.getWindowHandle();
+		
+		System.out.println("Window ID :"+windowid);
 		
 	}
 
