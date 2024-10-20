@@ -7,17 +7,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ImplicitWait {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException  {
 		
 		WebDriver driver = new ChromeDriver();
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		
 		driver.manage().window().maximize();
 		
+		
+		
 		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
+		
+		Thread.sleep(3000);
 		
 		driver.close();
 
