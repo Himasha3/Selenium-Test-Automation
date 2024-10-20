@@ -28,15 +28,15 @@ public class ConditionalMethods {
 
 		//isSelected
 		
-		WebElement male_rd = driver.findElement(By.xpath("//input[@id='gender-male']"));
+		//WebElement male_rd = driver.findElement(By.xpath("//input[@id='gender-male']"));
 		
-		WebElement female_rd = driver.findElement(By.xpath("//input[@id='gender-female']"));
+		//WebElement female_rd = driver.findElement(By.xpath("//input[@id='gender-female']"));
 		
-		System.out.println("Before selection.......");
+		//System.out.println("Before selection.......");
 		
-		System.out.println(male_rd.isSelected());
+		//System.out.println(male_rd.isSelected());
 		
-		System.out.println(female_rd.isSelected());
+		//System.out.println(female_rd.isSelected());
 		
 		//System.out.println("After selecting male.....");
 		//male_rd.click();
@@ -45,13 +45,19 @@ public class ConditionalMethods {
 		
 		//System.out.println(female_rd.isSelected());
 		
-		System.out.println("After selecting female...");
+		//System.out.println("After selecting female...");
 		
-		female_rd.click();
+		//female_rd.click();
 		
-		System.out.println(male_rd.isSelected());
+		//System.out.println(male_rd.isSelected());
 		 
-		System.out.println(female_rd.isSelected());
+		//System.out.println(female_rd.isSelected());
+		
+		//isSelected 
+		
+		boolean newsletterstatus = driver.findElement(By.xpath("//input[@id='Newsletter']")).isSelected();
+		
+		System.out.println("newsletter checkbox status : "+newsletterstatus);
 		
 		
 		
