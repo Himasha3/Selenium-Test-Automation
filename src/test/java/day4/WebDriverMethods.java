@@ -22,6 +22,9 @@ public class WebDriverMethods {
 		
 		System.out.println(driver.getCurrentUrl());
 		
+		//getPageSource
+		System.out.println(driver.getPageSource());
+		
 		
 	}
 
