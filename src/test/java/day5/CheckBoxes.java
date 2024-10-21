@@ -1,6 +1,7 @@
 package day5;
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -30,11 +31,19 @@ public class CheckBoxes {
 		//	checkboxes.get(i).click();
 		//}
 		
-		driver.findElement(By.xpath("//button[normalize-space()='Click for JS Alert']")).click();
+		driver.findElement(By.xpath("//button[normalize-space()='Click for JS Confirm']")).click();
 		
-		Thread.sleep(6000);
+		Thread.sleep(3000);
 		
-		driver.switchTo().alert().accept();
+		//driver.switchTo().alert().accept();
+		
+		//driver.switchTo().alert().accept();
+		
+		driver.switchTo().alert().dismiss();
+		
+		
+		//Confirmation Alert
+		
 		
 		
 		
