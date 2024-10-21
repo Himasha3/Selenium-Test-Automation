@@ -30,15 +30,10 @@ public class NavigationCommands2 {
 		 String parentID = windowList.get(0);
 		 String childID = windowList.get(1);
 		 
-		 Thread.sleep(3000);
 		 
 		 driver.switchTo().window(childID);
 		 
-		 Thread.sleep(3000);
-		 
 		 System.out.println(driver.getTitle());
-		 
-		 Thread.sleep(3000);
 		 
 		 driver.switchTo().window(parentID);
 		 
