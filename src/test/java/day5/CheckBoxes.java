@@ -8,11 +8,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CheckBoxes {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://testautomationpractice.blogspot.com/");
+		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 		
 		driver.manage().window().maximize();
 		
@@ -22,13 +22,19 @@ public class CheckBoxes {
 		
 		//select multiple checkboxes
 		
-		List<WebElement> checkboxes = driver.findElements(By.xpath("//input[@class='form-check-input' and @type='checkbox']"));
+		//List<WebElement> checkboxes = driver.findElements(By.xpath("//input[@class='form-check-input' and @type='checkbox']"));
 		
-		for(int i=0; i<checkboxes.size();i++)
-		{
+		//for(int i=0; i<3;i++)
+	//	{
 			
-			checkboxes.get(i).click();
-		}
+		//	checkboxes.get(i).click();
+		//}
+		
+		driver.findElement(By.xpath("//button[normalize-space()='Click for JS Alert']")).click();
+		
+		Thread.sleep(6000);
+		
+		driver.switchTo().alert().accept();
 		
 		
 		
